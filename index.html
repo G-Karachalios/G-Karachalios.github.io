@@ -3,12 +3,12 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial scale=1" />
-        <title>J10</title>
+        <title>Jerry's site</title>
         
     <style>
     body {
         font-family: Arial, sans-serif;
-        background: #19326e;      
+        background: #e76ef7;      
         color: white;
         min-height: 100vh;
         margin: 0;
@@ -34,12 +34,35 @@
     a {
         color: inherit;
     }
+
+    .clickable-word {
+        text-decoration: underline;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    #surprise-img {
+        display: none;
+        margin-top: 20px;
+        border-radius: 12px;
+        max-width: 100%;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
     </style>
     </head>
     <body>
-        <h1>Welcome to my site</h1>
+        <h1>Welcome to my first site!</h1>
         <div class="card">
             <p>Contact me: <a href="mailto:ge07sp@gmail.com">ge07sp@gmail.com</a></p>        
         </div>
+        <p>Hi my name is Jerry and this is my first site. click <span class="clickable-word" onclick="showSurprise()">here</span> for a surprise.</p>
+
+        <img id="surprise-img" src="cat.avif" alt="Έκπληξη!"/>
+
+        <script>
+            function showSurprise() {
+                document.getElementById('surprise-img').style.display = 'block';
+            }
+        </script>
     </body>
 </html>
