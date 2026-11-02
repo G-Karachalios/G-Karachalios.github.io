@@ -62,7 +62,14 @@
 
         <script>
             function showSurprise() {
-                document.getElementById('surprise-img').style.display = 'block';
+                const img = document.getElementById('surprise-img');
+
+                if(img.style.display === 'block'){
+                    img.style.display = 'none';
+                }
+                else {
+                    img.style.display = 'block';
+                }
             }
         </script>
     </body>
